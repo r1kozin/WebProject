@@ -1,0 +1,306 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+/*---------------- Header ----------*/
+
+header {
+	height: 70px;
+	background-color: black;
+}
+
+.logo {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.header_left a p{
+	color: white;
+	margin-right: 50px;
+	margin-top: 25px;
+	font-size: 14px;
+}
+
+.header_left a p:hover {
+	color: #c6c5c5;
+}
+
+.header_left a:hover {
+	text-decoration: none;
+}
+
+.header_right {
+	margin-top: 25px;
+}
+
+.login {
+	color: white;
+	font-size: 14px;
+	margin-left: 30px;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 10px;
+	width: 70px;
+	height: 30px;
+	margin-top: -5px;
+}
+
+.login:hover{
+	color: black;
+	background-color: white;
+}
+
+.header_right i {
+	margin-right: 20px;
+	color: white;
+	font-size: 14px;
+}
+
+.header_right i:hover {
+	color: #c6c5c5;
+}
+
+/*------------- Section1 --------*/
+
+.category_block {
+	padding-top: 20px;
+}
+
+.category_block a {
+	margin-right: 30px;
+	color: #808080;
+	font-size: 16px;
+}
+
+.red {
+	color: red;
+}
+
+.cart {
+	margin-right: 25px;
+	margin-left: 160px;
+	font-size: 20px;
+}
+
+.category_right {
+	margin-top: -5px;
+}
+
+.category_right a i {
+	font-size: 26px;
+}
+
+.amount {
+	font-size: 20px;
+}
+
+.section1_line {
+	height: 1px;
+	width: 100%;
+	margin-top: 5px;
+	background-color: #D3D3D3;
+}
+
+
+/*---------- Section2 ----------*/
+
+.title_product {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 34px;
+}
+
+.lines {
+	width: 100%;
+	height: 2px;
+	background-color: #c0933b;
+	margin: 0 auto;
+}
+
+.four_product_block {
+	padding-bottom: 70px;
+	padding-top: 70px;
+	border-bottom: 1px dotted gray;
+}
+
+.four_product_block1 {
+	padding-top: 70px;
+}
+
+.product_img_block {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.product_img {
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+}
+
+.product_name {
+	text-align: center;
+	font-size: 24px;
+	margin-top: -15px;
+}
+
+.product_line {
+	background-color: #c0933b;
+	width: 100px;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.product_price {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.product_btn {
+	background-color: #c0933b;
+	border: 1px solid #c0933b;
+	border-radius: 10px;
+	color: white;
+	height: 40px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.product_btn:hover {
+	background-color: #b1852e;
+}
+
+.product_about {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	color: rgba(54,40,58,.44);
+	font-size: 12px;
+	padding-top: 20px
+}
+
+.product_block {
+	border-right: 1px dotted gray;
+}
+
+
+/*-------- Footer ---------*/
+
+.footer {
+	width: 100%;
+	background-color: black;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 70px;
+}
+
+.footer_h4 {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+
+.footer_line {
+	height: 2px;
+	width: 66px;
+	background-color: #c0933b;
+	margin-top: 20px;
+	margin-bottom: 43px;
+}
+
+.footer_par {
+	color: #c0c0c0;
+	font-size: 14px;
+	width: 80%;
+}
+
+.footer_menu a {
+	color: #c0c0c0;
+	font-size: 14px;
+}
+
+.footer_menu li {
+	margin-bottom: 15px;
+}
+
+.footer_menu a:hover {
+	text-decoration: none;
+	color: #8b4513;
+}
+
+h5 {
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.h5_par {
+	color: #c0c0c0;
+	font-size: 14px;
+	padding-bottom: 10px;
+	width: 80%;
+}
+
+.h5_email {
+	padding-bottom: 0px;
+	color: white;
+}
+
+
+/*------- Form ----------*/
+
+.div_form {
+	padding-left: 60px;
+}
+
+.inp {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	color: #808080;
+}
+
+.text_area {
+	height: 60px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.form_button {
+	border-radius: 5px;
+	font-weight: bold;
+	width: 100%;
+	height: 40px;
+	color: white;
+	background-color: #c0933b;
+	border: 1px solid #c0933b; 
+}
+
+.form_button:hover {
+	background-color: #b1852e;
+	border: 1px solid #b1852e;
+	color: white;
+}
+
+.copyright {
+	margin-top: 25px;
+	text-align: center;
+	color: #535353;
+}
