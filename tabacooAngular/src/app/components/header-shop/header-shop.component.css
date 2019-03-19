@@ -10,6 +10,7 @@ header {
 	font-size: 30px;
 	text-align: center;
 	letter-spacing: 0.1em;
+	margin-top: 15px;
 }
 
 .header_left a p{
@@ -29,6 +30,7 @@ header {
 
 .header_right {
 	margin-top: 25px;
+	margin-left: 110px;
 }
 
 .login {
