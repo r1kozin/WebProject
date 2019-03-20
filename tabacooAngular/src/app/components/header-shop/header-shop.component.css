@@ -67,7 +67,7 @@ header {
 }
 
 .category_block a {
-	margin-right: 30px;
+	margin-right: 25px;
 	color: #808080;
 	font-size: 16px;
 }
@@ -92,6 +92,7 @@ header {
 
 .amount {
 	font-size: 20px;
+	color: black;
 }
 
 .section1_line {
