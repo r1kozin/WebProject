@@ -9,6 +9,9 @@ import { ShopComponent } from './components/shop/shop.component';
 import { TabakComponent } from './components/tabak/tabak.component';
 import { HeaderShopComponent } from './components/header-shop/header-shop.component';
 import { RouterModule } from '@angular/router';
+import {ProviderService} from './shared/services/provider.service';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 const routes = [
   {path: '', component: LandingComponent},
@@ -26,11 +29,15 @@ const routes = [
     HeaderShopComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    ProviderService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
