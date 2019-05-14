@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {ProviderService} from '../../shared/services/provider.service';
+import {ICategory} from '../../shared/models/models';
 
 @Component({
   selector: 'app-shop',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopComponent implements OnInit {
 
-  constructor() { }
+  public output = '';
+  public stringArray: string[] = [];
+  public categories: ICategory[] = [];
+  public loading = false;
 
-  ngOnInit() {
+  constructor(private provider: ProviderService) { }
+
+   ngOnInit() {
+    this.provider.getCategories().then(res => {
+      this.categories = res;
+      setTimeout(() => {
+        this.loading = true;
+      }, 2000);
+    });
   }
 
 }

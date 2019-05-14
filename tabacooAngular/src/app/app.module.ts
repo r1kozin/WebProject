@@ -26,7 +26,7 @@ const routes = [
     LandingComponent,
     ShopComponent,
     TabakComponent,
-    HeaderShopComponent
+    HeaderShopComponent,
   ],
   imports: [
     FormsModule,

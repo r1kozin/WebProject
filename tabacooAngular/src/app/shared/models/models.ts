@@ -1,7 +1,6 @@
 export interface ICategory {
   id: number;
   name: string;
-  created_by: string;
 }
 
 export interface IProduct {

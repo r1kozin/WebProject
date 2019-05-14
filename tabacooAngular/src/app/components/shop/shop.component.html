@@ -195,6 +195,22 @@
 				</div>
 			</div>
 		</div>
+
+		
+<ng-container *ngIf="!loading">
+  Loading..
+</ng-container>
+
+<ng-container *ngIf="loading">
+  <div>
+    <div *ngFor="let c of categories">
+      <p>{{c.id}} - {{c.name}}</p>
+    </div>
+  </div>
+</ng-container>
+
 	</section>
 
 <app-footer></app-footer>
+
+
