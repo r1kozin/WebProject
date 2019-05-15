@@ -7,6 +7,6 @@ urlpatterns = [
     path('logout/', views.logout),
     path('categories/', views.CategoryList.as_view()),
     path('categories/<int:pk>/', views.CategoryDetail.as_view()),
-
-
+    path('categories/<int:pk>/products/', views.Products.as_view()),
+    path('order/', views.OrdersGetCreate.as_view())
 ]

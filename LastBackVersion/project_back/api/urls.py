@@ -5,8 +5,8 @@ urlpatterns = [
    # path('users/', views.UserList.as_view()),
    # path('login/', views.login),
    # path('logout/', views.logout),
-	path('categories/', views.CategoryList.as_view()),
-    path('categories/<int:pk>/', views.CategoryDetail.as_view()),
-    path('categories/<int:pk>/products/', views.Products.as_view()),
-
+	 path('categories/', views.CategoryList.as_view()),
+     path('categories/<int:pk>/', views.CategoryDetail.as_view()),
+     path('categories/<int:pk>/products/', views.Products.as_view()),
+     path('order/', views.OrdersGetCreate.as_view())
 ]

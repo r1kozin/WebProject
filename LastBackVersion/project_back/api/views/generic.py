@@ -1,6 +1,6 @@
-from api.models import Category, Product
+from api.models import Category, Product,Orders
 from django.contrib.auth.models import User
-from api.serializers import CategorySerializer2, ProductSerializer
+from api.serializers import *
 from rest_framework import generics,status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
@@ -29,5 +29,8 @@ class Products(generics.ListCreateAPIView):
 
         queryset = category.product_set.all()
         return queryset
+class OrdersGetCreate(generics.ListCreateAPIView):
+    serializer_class = OrderSerializer
+    queryset = Orders.objects.all()
 
 

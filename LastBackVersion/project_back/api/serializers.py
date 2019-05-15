@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from api.models import Category, Product
+from api.models import Category, Product,Orders
 
 
 class CategorySerializer2(serializers.ModelSerializer):
@@ -34,4 +34,20 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'username', 'email',)
+
+class OrderSerializer(serializers.ModelSerializer):
+    first_name = serializers.CharField(max_length=50)
+    last_name = serializers.CharField(max_length=50)
+    email =serializers.EmailField()
+    address = serializers.CharField(max_length=250)
+    postal_code = serializers.CharField(max_length=20)
+    city = serializers.CharField(max_length=100)
+    created = serializers.DateTimeField()
+    updated = serializers.DateTimeField()
+    paid = serializers.BooleanField(default=False)
+
+    class Meta:
+        model = Orders
+        fields = '__all__'
+
 
